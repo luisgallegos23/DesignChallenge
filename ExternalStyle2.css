@@ -1,13 +1,32 @@
 
 A:link {color: grey}
 A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: teal}
+A:hover {text-decoration: overline; color: Teal}
 	
 Body {
 	background-color: white;
 	font-family: cambria;
-	color: gray	
+	color: grey	
 	}
+
+Nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	position: sticky;
+	width: 100%;
+	top: 0;
+}
+
+A.navlink{
+	float: left;
+	display: block;
+	padding: 5px 5px;
+	color: white;
+	text-align: center;
+}
 
 H1 {font-size: 50pt; text-align: right}
 H2 {font-size: 25pt; text-align: right}
@@ -16,6 +35,8 @@ H4 {text-align: center}
 H5 {font-size: 15pt}
 
 P {font-size: 10pt; font-family: monospace}
+
+
 
 Table {
 	width: 400px; 
@@ -32,13 +53,9 @@ Form {
 	color: white; 
 	background-color: green}
 
-Nav{
-	top: 0%;
-	width: 100%;
-	height: 2.5em;
-	background-color: black;
-	position: sticky;
-	text-align: center;
-}
 
+
+Img{
+	border: black 1em;
+}
 
