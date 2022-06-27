@@ -6,7 +6,7 @@ A:hover {text-decoration: overline; color: Teal}
 Body {
 	background-color: white;
 	font-family: cambria;
-	color: grey	
+	color: black	
 	}
 
 Nav{
@@ -36,8 +36,6 @@ H5 {font-size: 15pt}
 
 P {font-size: 10pt; font-family: monospace}
 
-
-
 Table {
 	width: 400px; 
 	font-family: monospace; 
@@ -56,6 +54,11 @@ Form {
 
 
 Img{
-	border: black 1em;
+	border-radius: 1em;
+	border-color: black;
+	border-width: 1em;
+	border-style: solid;
+	padding: .5em;
 }
+
 
