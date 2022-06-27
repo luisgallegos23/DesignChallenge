@@ -1,7 +1,7 @@
 
 A:link {color: grey}
 A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: Teal}
+A:hover {text-decoration: overline; color: darkgreen}
 	
 Body {
 	background-color: white;
@@ -40,7 +40,7 @@ Table {
 	width: 400px; 
 	font-family: monospace; 
 	color: white; 
-	background-color: green;
+	background-color: darkslategrey;
 	margin: .8em;
 	border-color: darkgreen}
 
@@ -49,7 +49,12 @@ Form {
 	font-family: monospace; 
 	text-align: center; 
 	color: white; 
-	background-color: green}
+	background-color: #333;
+	border-color: black;
+	border-width: .5em;
+	border-style: solid;
+	padding: 1em;
+}
 
 
 
@@ -59,6 +64,10 @@ Img{
 	border-width: 1em;
 	border-style: solid;
 	padding: .5em;
+}
+
+form{
+	text-align: center;
 }
 
 
