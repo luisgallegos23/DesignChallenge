@@ -52,7 +52,10 @@ A.navlink{
 
 Img{
 	margin: 0;
-	width: 100%;
+	border-color: #333;
+	border-width: .5em;
+	border-style: solid;
+	border-radius: 1em;
 }
 
 input[type=text]{
