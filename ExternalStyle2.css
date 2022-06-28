@@ -7,29 +7,10 @@ Body {
 	background-color: white;
 	font-family: cambria;
 	color: black	
-	}
-
-Nav{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: sticky;
-	width: 100%;
-	top: 0;
 }
 
-A.navlink{
-	float: left;
-	display: block;
-	padding: 5px 5px;
-	color: white;
-	text-align: center;
-}
-
-H1 {font-size: 50pt; text-align: right}
-H2 {font-size: 25pt; text-align: right}
+H1 {font-size: 50pt; text-align: center}
+H2 {font-size: 25pt; text-align: center}
 H3 {font-size: 10pt; text-align: center}
 H4 {text-align: center}
 H5 {font-size: 15pt}
@@ -57,17 +38,42 @@ Form {
 }
 
 
-
-Img{
-	border-radius: 1em;
-	border-color: black;
-	border-width: 1em;
-	border-style: solid;
-	padding: .5em;
-}
-
 form{
 	text-align: center;
 }
 
+@media only screen and (max-width: 600px){
+	Nav{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: black;
+		position: sticky;
+		width:600px;
+		top: 0;
+	}
+
+	A.navlink{
+		float: left;
+		display: block;
+		padding: 5px 5px;
+		color: white;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	Img{
+		border-radius: 1em;
+		border-color: black;
+		border-width: .5em;
+		border-style: solid;
+		padding: .5em;
+		margin: 0;
+		object-fit: scale-down;
+	}
+	Form{
+		width: 100%;
+	}
+}
 
