@@ -1,12 +1,13 @@
 
-A:link {color: grey}
+A:link {color: white}
 A:visited, A:active {color: green}
 A:hover {text-decoration: overline; color: darkgreen}
 	
 Body {
 	background-color: white;
 	font-family: cambria;
-	color: black	
+	color: black;
+	background-image: linear-gradient(to right, lightslategrey, lightgreen );
 }
 
 H1 {font-size: 50pt; text-align: center}
@@ -24,9 +25,14 @@ Table {
 	width: 400px; 
 	font-family: monospace; 
 	color: white; 
-	background-color: darkslategrey;
 	margin: .8em;
-	border-color: darkgreen}
+	border-color: white;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 10%;
+	position: static;
+	}
 
 
 Form {
@@ -35,13 +41,15 @@ Form {
 	color: white; 
 	background-color: #333;
 	width: 100%;
-}
+	text-align: center
+	}
+
 Nav{
 	overflow: hidden;
 	background-color: black;
 	position: sticky;
 	width:100%;
-	top: 0;
+	top: 0
 }
 
 A.navlink{
@@ -50,7 +58,7 @@ A.navlink{
 	padding: 5px 5px;
 	color: white;
 	text-align: center;
-	font-size: 3vw;
+	font-size: 3vw
 }
 
 Img{
@@ -58,16 +66,22 @@ Img{
 	max-width: 75%;
 	height: auto;
 	padding: .5em;
-	border-color: #333;
+	border-color: white;
 	border-width: .5em;
 	border-style: solid;
-	border-radius: 1em;
+	border-radius: 1em
 }
 
 input[type=text]{
 	width: 98%;
 	padding: 12px 20px;
 	margin: 0px 0 8px 5px;
-	box-sizing: border-box;
+	box-sizing: border-box
+}
+
+img#logo{
+	position: static; /* or absolute */
+	top: 50%;
+	left: 50%;
 }
 
