@@ -24,9 +24,9 @@ P {font-size: 10pt;
 Table {
 	width: 400px; 
 	font-family: monospace; 
-	color: white; 
+	color: black; 
 	margin: .8em;
-	border-color: white;
+	border: white solid .5em;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
@@ -40,8 +40,7 @@ Form {
 	text-align: left; 
 	color: white; 
 	background-color: #333;
-	width: 100%;
-	text-align: center
+	width: 100%
 	}
 
 Nav{
@@ -79,9 +78,78 @@ input[type=text]{
 	box-sizing: border-box
 }
 
-img#logo{
-	position: static; /* or absolute */
+#logo{
+	border: black 3px solid;
+	position: relative;
 	top: 50%;
-	left: 50%;
+	transform: translateY(-50%);
 }
 
+@media screen and (max-width: 600px) {
+	.grid-container{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		height: 80%;
+		left: 10%;
+		justify-content: center;
+		gap: 1em;
+	}
+	
+	#object1{
+		grid-row: 1/2;
+		width: 100%;
+		height: 100%;
+		object-fit:fill;
+		
+	}
+	
+	#object2{
+		grid-row: 2/3;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: .5;
+	
+	}
+	
+	#object3{
+		grid-row: 3/4;
+		text-align: center;
+		
+	}
+}
+
+@media screen and (min-width:600px) {
+	.grid-container{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4,1fr);
+		height: 80%;
+	}
+	
+	#object1{
+		grid-column: 2/4;
+		grid-row: 1/3;
+		max-width: 100%;
+		max-height: 100%;
+		text-align: center;
+	}
+	
+	#object2{
+		grid-column: 1/3;
+		grid-row: 3/5;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		line-height: 0;
+	}
+	
+	#object3{
+		grid-column: 3/5;
+		grid-row: 3/5;
+		text-align: center;
+		line-height: 0;
+		justify-self: center; 
+	}
+	
+}
